@@ -1,0 +1,18 @@
+/* Bootstrap отвечает за сетки и компоненты. Здесь только небольшие правки. */
+body {
+  min-height: 100vh;
+  background-color: #fffcf7;
+}
+.brand-bar {
+  background-color: #f4cd88;
+}
+.hero {
+  background-color: #fbefd9;
+}
+.room-image {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: #f8ead6;
+}

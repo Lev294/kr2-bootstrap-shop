@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Лапки — учебный сайт гостиницы для кошек, собак и небольших домашних животных. Номера, тарифы и забота о питомцах.">
+  <title>Лапки — гостиница для домашних животных</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="brand-bar py-3" id="top">
+    <div class="container">
+      <div class="row align-items-center g-2">
+        <div class="col-12 col-md-8"><p class="h5 mb-0">Гостиница для домашних животных</p></div>
+        <div class="col-12 col-md-4 text-md-end"><span class="badge text-bg-light">Забота, пока вы в отъезде</span></div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="Основная навигация">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🐾 Лапки</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Номера и тарифы</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Условия проживания</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Бронирование</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="container-fluid hero py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-6">
+            <p class="text-uppercase small fw-bold text-success">Отпуск для вас — забота для них</p>
+            <h1 class="display-4 fw-bold">Ваш питомец<br>в хороших лапках</h1>
+            <p class="lead text-body-secondary my-4">Уютные номера, привычный режим и внимание к каждому гостю. Познакомьтесь с гостиницей и выберите размещение для своего любимца.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-success btn-lg" href="catalog.html">Выбрать номер</a>
+              <a class="btn btn-outline-dark btn-lg" href="product.html">Условия проживания</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img class="img-fluid rounded-4 shadow-sm" src="images/room-cat.svg" alt="Иллюстрация уютного номера с кошкой на лежанке" width="640" height="400">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5" id="advantages">
+      <h2 class="h1 text-center mb-4">Спокойно за каждого гостя</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4"><div class="p-4 border rounded-4 h-100 bg-white"><h3 class="h5">Привычный режим</h3><p class="text-body-secondary mb-0">Уточняем привычки, время кормления и особенности характера до заселения.</p></div></div>
+        <div class="col-12 col-md-4"><div class="p-4 border rounded-4 h-100 bg-white"><h3 class="h5">Своё пространство</h3><p class="text-body-secondary mb-0">Размещаем питомцев отдельно. Для кошек, собак и небольших животных есть свои зоны.</p></div></div>
+        <div class="col-12 col-md-4"><div class="p-4 border rounded-4 h-100 bg-white"><h3 class="h5">Больше внимания</h3><p class="text-body-secondary mb-0">Можно добавить груминг, дополнительную прогулку или индивидуальный уход.</p></div></div>
+      </div>
+    </section>
+    <section class="container my-5">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+        <h2 class="h1 mb-0">Номер для вашего любимца</h2>
+        <a class="btn btn-outline-success" href="catalog.html">Все номера и тарифы</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="border rounded-4 h-100 p-3 bg-white">
+            <img class="room-image rounded-3 mb-3" src="images/room-cat.svg" alt="Иллюстрация номера «Уют»" width="640" height="400" loading="lazy">
+            <span class="badge text-bg-success mb-2">Для кошек</span>
+            <h3 class="h4">Уют</h3>
+            <p class="text-body-secondary">Отдельный номер с лежанкой, когтеточкой и полками для отдыха. Подходит кошкам, которым важно спокойное пространство.</p>
+            <p class="fs-5 fw-bold">800 ₽ <span class="small fw-normal">/ сутки</span></p>
+            <a class="btn btn-success" href="catalog.html">Выбрать размещение</a>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="border rounded-4 h-100 p-3 bg-white">
+            <img class="room-image rounded-3 mb-3" src="images/room-dog.svg" alt="Иллюстрация номера «Простор»" width="640" height="400" loading="lazy">
+            <span class="badge text-bg-success mb-2">Для собак</span>
+            <h3 class="h4">Простор</h3>
+            <p class="text-body-secondary">Просторный номер с мягким местом для сна. В базовый тариф включены две прогулки в день и уход по вашему расписанию.</p>
+            <p class="fs-5 fw-bold">1 200 ₽ <span class="small fw-normal">/ сутки</span></p>
+            <a class="btn btn-success" href="catalog.html">Выбрать размещение</a>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="border rounded-4 h-100 p-3 bg-white">
+            <img class="room-image rounded-3 mb-3" src="images/room-small.svg" alt="Иллюстрация номера «Мини»" width="640" height="400" loading="lazy">
+            <span class="badge text-bg-success mb-2">Для небольших питомцев</span>
+            <h3 class="h4">Мини</h3>
+            <p class="text-body-secondary">Тихое место для кроликов и морских свинок. Размещение в привычном вольере или клетке, которые привозит владелец.</p>
+            <p class="fs-5 fw-bold">500 ₽ <span class="small fw-normal">/ сутки</span></p>
+            <a class="btn btn-success" href="catalog.html">Выбрать размещение</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-12 col-md-7">
+          <p class="fw-bold mb-1">🐾 Лапки</p>
+          <p class="small text-white-50 mb-0">© 2026 · Учебный проект · Демидовс Лев Алексейсович</p>
+        </div>
+        <div class="col-12 col-md-5 text-md-end">
+          <a class="link-light me-3" href="catalog.html">Номера</a>
+          <a class="link-light me-3" href="order.html">Заявка</a>
+          <a class="link-light" href="#top">Наверх ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
