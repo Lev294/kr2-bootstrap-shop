@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Лапки — учебный сайт гостиницы для кошек, собак и небольших домашних животных. Номера, тарифы и забота о питомцах.">
+  <meta name="description" content="Лапки — гостиница для кошек, собак и небольших домашних животных. Уютные номера, привычный режим и заботливый уход.">
   <title>Лапки — гостиница для домашних животных</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
@@ -17,7 +17,7 @@
       </div>
     </div>
   </header>
-  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="Основная навигация">
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top shadow-sm" data-bs-theme="dark" aria-label="Основная навигация">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">🐾 Лапки</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
@@ -28,87 +28,130 @@
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
           <li class="nav-item"><a class="nav-link" href="catalog.html">Номера и тарифы</a></li>
           <li class="nav-item"><a class="nav-link" href="product.html">Условия проживания</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">О нас</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
   <main>
-    <section class="container-fluid hero py-5">
+    <section class="container-fluid px-0 hero py-5">
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-12 col-lg-6">
             <p class="text-uppercase small fw-bold text-success">Отпуск для вас — забота для них</p>
             <h1 class="display-4 fw-bold">Ваш питомец<br>в хороших лапках</h1>
-            <p class="lead text-body-secondary my-4">Уютные номера, привычный режим и внимание к каждому гостю. Познакомьтесь с гостиницей и выберите размещение для своего любимца.</p>
+            <p class="lead text-body-secondary my-4">Уютные номера, привычный режим и внимание к каждому гостю. Пока вы в отъезде, любимец отдыхает в своём ритме.</p>
             <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-success btn-lg" href="catalog.html">Выбрать номер</a>
-              <a class="btn btn-outline-dark btn-lg" href="product.html">Условия проживания</a>
+              <a class="btn btn-success btn-lg" href="catalog.html">Посмотреть номера</a>
+              <a class="btn btn-outline-dark btn-lg" href="#about">О гостинице</a>
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <img class="img-fluid rounded-4 shadow-sm" src="images/room-cat.svg" alt="Иллюстрация уютного номера с кошкой на лежанке" width="640" height="400">
+            <img class="img-fluid rounded-4 shadow-sm" src="images/room-cat.svg" alt="Кошка отдыхает на мягкой лежанке в гостинице Лапки" width="640" height="400">
           </div>
         </div>
       </div>
     </section>
-    <section class="container my-5" id="advantages">
-      <h2 class="h1 text-center mb-4">Спокойно за каждого гостя</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-4"><div class="p-4 border rounded-4 h-100 bg-white"><h3 class="h5">Привычный режим</h3><p class="text-body-secondary mb-0">Уточняем привычки, время кормления и особенности характера до заселения.</p></div></div>
-        <div class="col-12 col-md-4"><div class="p-4 border rounded-4 h-100 bg-white"><h3 class="h5">Своё пространство</h3><p class="text-body-secondary mb-0">Размещаем питомцев отдельно. Для кошек, собак и небольших животных есть свои зоны.</p></div></div>
-        <div class="col-12 col-md-4"><div class="p-4 border rounded-4 h-100 bg-white"><h3 class="h5">Больше внимания</h3><p class="text-body-secondary mb-0">Можно добавить груминг, дополнительную прогулку или индивидуальный уход.</p></div></div>
+    <section class="container my-5" id="about" aria-labelledby="about-title">
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-lg-5">
+          <p class="text-success fw-bold mb-2">О нас</p>
+          <h2 class="h1" id="about-title">Забота начинается<br>с привычек питомца</h2>
+        </div>
+        <div class="col-12 col-lg-7">
+          <p class="lead">«Лапки» — гостиница для домашних животных, в которой личное пространство и спокойный уход важнее суеты.</p>
+          <p class="text-body-secondary mb-0">Мы знакомимся не только с питомцем, но и с его обычным днём: когда он ест, как любит играть и где предпочитает отдыхать. Для кошек, собак и небольших животных предусмотрены отдельные зоны. Знакомый корм, любимая игрушка и внимание к деталям помогают сделать время вдали от дома комфортнее.</p>
+        </div>
       </div>
     </section>
-    <section class="container my-5">
+    <section class="container my-5" id="advantages" aria-labelledby="advantages-title">
+      <h2 class="h2 mb-4" id="advantages-title">Спокойно за каждого гостя</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="p-4 border rounded-4 h-100 bg-white">
+            <h3 class="h5">Привычный режим</h3>
+            <p class="text-body-secondary mb-0">Уточняем время кормления, любимые занятия и особенности характера до заселения. Не торопим знакомство с новой обстановкой.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="p-4 border rounded-4 h-100 bg-white">
+            <h3 class="h5">Своё пространство</h3>
+            <p class="text-body-secondary mb-0">Отдельные номера и зоны отдыха помогают каждому питомцу чувствовать себя спокойно. У него всегда есть место для уединения.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="p-4 border rounded-4 h-100 bg-white">
+            <h3 class="h5">Внимание каждый день</h3>
+            <p class="text-body-secondary mb-0">Следим за водой, чистотой и настроением гостя. Рассказываем владельцу, как проходит день, и учитываем его пожелания по уходу.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5" aria-labelledby="popular-title">
       <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
-        <h2 class="h1 mb-0">Номер для вашего любимца</h2>
+        <h2 class="h2 mb-0" id="popular-title">Уют для каждого любимца</h2>
         <a class="btn btn-outline-success" href="catalog.html">Все номера и тарифы</a>
       </div>
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-4">
-          <article class="card h-100 p-3 border-0 shadow-sm">
-            <img class="room-image rounded-3 mb-3" src="images/room-cat.svg" alt="Иллюстрация номера «Уют»" width="640" height="400" loading="lazy">
-            <span class="badge text-bg-success mb-2">Для кошек</span>
-            <h3 class="h4">Уют</h3>
-            <p class="text-body-secondary">Отдельный номер с лежанкой, когтеточкой и полками для отдыха. Подходит кошкам, которым важно спокойное пространство.</p>
-            <p class="fs-5 fw-bold">800 ₽ <span class="small fw-normal">/ сутки</span></p>
-            <a class="btn btn-success" href="catalog.html">Выбрать размещение</a>
+          <article class="card h-100 shadow-sm border-0">
+            <img class="card-img-top room-image" src="images/room-cat.svg" alt="Номер «Уют» для кошек" width="640" height="400" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-success align-self-start mb-2">Для кошек</span>
+              <h3 class="card-title h4">Уют</h3>
+              <p class="card-text text-body-secondary">Отдельный номер с лежанкой, когтеточкой и полками для отдыха. Спокойное пространство, в котором можно спрятаться, потянуться и наблюдать за происходящим.</p>
+              <p class="fs-5 fw-bold mt-auto">800 ₽ <span class="small fw-normal">/ сутки</span></p>
+              <a class="btn btn-outline-success align-self-start" href="product.html?room=cat">Подробнее о номере</a>
+            </div>
           </article>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-          <article class="card h-100 p-3 border-0 shadow-sm">
-            <img class="room-image rounded-3 mb-3" src="images/room-dog.svg" alt="Иллюстрация номера «Простор»" width="640" height="400" loading="lazy">
-            <span class="badge text-bg-success mb-2">Для собак</span>
-            <h3 class="h4">Простор</h3>
-            <p class="text-body-secondary">Просторный номер с мягким местом для сна. В базовый тариф включены две прогулки в день и уход по вашему расписанию.</p>
-            <p class="fs-5 fw-bold">1 200 ₽ <span class="small fw-normal">/ сутки</span></p>
-            <a class="btn btn-success" href="catalog.html">Выбрать размещение</a>
+          <article class="card h-100 shadow-sm border-0">
+            <img class="card-img-top room-image" src="images/room-dog.svg" alt="Номер «Простор» для собак" width="640" height="400" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-success align-self-start mb-2">Для собак</span>
+              <h3 class="card-title h4">Простор</h3>
+              <p class="card-text text-body-secondary">Просторный номер с мягкой лежанкой и местом для отдыха после прогулок. В базовый тариф включены две прогулки в день и привычный режим кормления.</p>
+              <p class="fs-5 fw-bold mt-auto">1 200 ₽ <span class="small fw-normal">/ сутки</span></p>
+              <a class="btn btn-outline-success align-self-start" href="product.html?room=dog">Подробнее о номере</a>
+            </div>
           </article>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-          <article class="card h-100 p-3 border-0 shadow-sm">
-            <img class="room-image rounded-3 mb-3" src="images/room-small.svg" alt="Иллюстрация номера «Мини»" width="640" height="400" loading="lazy">
-            <span class="badge text-bg-success mb-2">Для небольших питомцев</span>
-            <h3 class="h4">Мини</h3>
-            <p class="text-body-secondary">Тихое место для кроликов и морских свинок. Размещение в привычном вольере или клетке, которые привозит владелец.</p>
-            <p class="fs-5 fw-bold">500 ₽ <span class="small fw-normal">/ сутки</span></p>
-            <a class="btn btn-success" href="catalog.html">Выбрать размещение</a>
+          <article class="card h-100 shadow-sm border-0">
+            <img class="card-img-top room-image" src="images/room-small.svg" alt="Номер «Мини» для небольших питомцев" width="640" height="400" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-success align-self-start mb-2">Для небольших питомцев</span>
+              <h3 class="card-title h4">Мини</h3>
+              <p class="card-text text-body-secondary">Тихая зона для кроликов и морских свинок. Питомец живёт в знакомой клетке или вольере, которые владелец привозит вместе с привычным кормом и наполнителем.</p>
+              <p class="fs-5 fw-bold mt-auto">500 ₽ <span class="small fw-normal">/ сутки</span></p>
+              <a class="btn btn-outline-success align-self-start" href="product.html?room=small">Подробнее о номере</a>
+            </div>
           </article>
         </div>
       </div>
     </section>
-    <section class="container my-5" id="reviews">
-      <h2 class="h1 mb-3">Отзывы о «Лапках»</h2>
-      <p class="text-body-secondary">В учебной версии можно добавить отзыв на эту страницу. Он виден до обновления страницы и не отправляется на сервер.</p>
+    <section class="container my-5" id="reviews" aria-labelledby="reviews-title">
       <div class="row g-4">
         <div class="col-12 col-lg-6">
-          <div id="reviewList" class="d-grid gap-3" aria-live="polite"><p class="text-body-secondary" id="noReviews">Отзывов пока нет. Поделитесь впечатлением первым.</p></div>
+          <h2 class="h2 mb-3" id="reviews-title">Ваши впечатления важны</h2>
+          <p class="text-body-secondary">Расскажите, как любимец провёл время в «Лапках»: что помогло ему освоиться и какие моменты ухода вы особенно оценили.</p>
+          <div id="reviewList" class="d-grid gap-3" aria-live="polite">
+            <p class="text-body-secondary" id="noReviews">Здесь появится ваш отзыв о проживании.</p>
+          </div>
         </div>
         <div class="col-12 col-lg-6">
-          <form class="card card-body" id="reviewForm">
-            <h3 class="h5">Оставить отзыв</h3>
-            <div class="mb-3"><label class="form-label" for="review-name">Имя *</label><input class="form-control" id="review-name" name="name" minlength="2" maxlength="50" required></div>
-            <div class="mb-3"><label class="form-label" for="review-text">Ваш отзыв *</label><textarea class="form-control" id="review-text" name="review" rows="4" minlength="10" maxlength="600" required></textarea></div>
+          <form class="card card-body p-4" id="reviewForm">
+            <h3 class="h5 mb-3">Оставить отзыв</h3>
+            <div class="mb-3">
+              <label class="form-label" for="review-name">Имя *</label>
+              <input class="form-control" id="review-name" name="name" minlength="2" maxlength="50" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="review-text">Ваш отзыв *</label>
+              <textarea class="form-control" id="review-text" name="review" rows="3" minlength="10" maxlength="600" required></textarea>
+            </div>
             <button class="btn btn-success align-self-start" type="submit">Добавить отзыв</button>
           </form>
         </div>
@@ -117,15 +160,27 @@
   </main>
   <footer class="bg-dark text-white py-4 mt-5">
     <div class="container">
-      <div class="row g-3 align-items-center">
-        <div class="col-12 col-md-7">
-          <p class="fw-bold mb-1">🐾 Лапки</p>
-          <p class="small text-white-50 mb-0">© 2026 · Учебный проект · Демидовс Лев Алексейсович</p>
+      <div class="row g-4">
+        <div class="col-12 col-md-5">
+          <p class="h4 mb-2">🐾 Лапки</p>
+          <p class="text-white-50 mb-0">Уютное место для вашего питомца.<br>Привычный ритм и внимание каждый день.</p>
         </div>
-        <div class="col-12 col-md-5 text-md-end">
-          <a class="link-light me-3" href="catalog.html">Номера</a>
-          <a class="link-light" href="#top">Наверх ↑</a>
+        <div class="col-6 col-md-3">
+          <p class="fw-bold mb-2">Знакомство с гостиницей</p>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1"><a class="link-light" href="index.html#about">О нас</a></li>
+            <li class="mb-1"><a class="link-light" href="catalog.html">Номера и тарифы</a></li>
+            <li><a class="link-light" href="product.html">Условия проживания</a></li>
+          </ul>
         </div>
+        <div class="col-6 col-md-4">
+          <p class="fw-bold mb-2">Перед заселением</p>
+          <p class="text-white-50 mb-0">Подготовьте привычный корм, переноску и знакомые вещи любимца. Расскажите нам о его характере и режиме.</p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 border-top border-secondary pt-3 mt-4 small">
+        <span>© 2026 Лапки. С заботой о ваших любимцах.</span>
+        <a class="link-light" href="#top">Наверх ↑</a>
       </div>
     </div>
   </footer>
