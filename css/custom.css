@@ -16,3 +16,8 @@ body {
   object-fit: contain;
   background-color: #f8ead6;
 }
+
+.review-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
