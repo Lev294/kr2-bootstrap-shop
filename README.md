@@ -106,3 +106,8 @@ kr2-bootstrap-shop/
 - GitHub Pages: https://lev294.github.io/kr2-bootstrap-shop/
 - Bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
 - Сайт-пример, использованный как ориентир структуры: https://mrdary-art.github.io/kr2-bootstrap-shop/
+
+## Материалы для защиты
+
+- [Все 62 ответа на вопросы](docs/answers.md).
+- [Итоговая проверка и отложенные требования](docs/checklist.md).
