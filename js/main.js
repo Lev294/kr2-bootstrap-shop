@@ -17,11 +17,12 @@ if (navbar && window.bootstrap) {
   });
 }
 
-// Ссылка из карточки открывает вкладку выбранного номера.
-const selectedRoom = new URLSearchParams(window.location.search).get("room") || window.location.hash.slice(1);
-const roomTab = document.getElementById("room-" + selectedRoom + "-tab");
-if (roomTab && window.bootstrap) {
-  bootstrap.Tab.getOrCreateInstance(roomTab).show();
+// Ссылка из карточки открывает выбранное предложение; старые ссылки room тоже работают.
+const params = new URLSearchParams(window.location.search);
+const selectedPlace = params.get("place") || params.get("room") || window.location.hash.slice(1);
+const placeTab = document.getElementById("place-" + selectedPlace + "-tab");
+if (placeTab && window.bootstrap) {
+  bootstrap.Tab.getOrCreateInstance(placeTab).show();
 }
 
 // Отзыв добавляется только на открытую страницу, без базы данных.

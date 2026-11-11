@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Как живут гости Лапок: выберите номер для своего питомца, узнайте о ежедневном уходе и подготовке к заселению.">
-  <title>Условия проживания — Лапки</title>
+  <meta name="description" content="Условия передержек в каталоге Лапок: сравните предложения для разных питомцев, особенности ухода и вопросы, которые стоит уточнить у исполнителя.">
+  <title>Условия передержки — Лапки</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -12,7 +12,7 @@
   <header class="brand-bar py-3" id="top">
     <div class="container">
       <div class="row align-items-center g-2">
-        <div class="col-12 col-md-8"><p class="h5 mb-0">Гостиница для домашних животных</p></div>
+        <div class="col-12 col-md-8"><p class="h5 mb-0">Сервис поиска передержек</p></div>
         <div class="col-12 col-md-4 text-md-end"><span class="badge text-bg-light">Забота, пока вы в отъезде</span></div>
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-          <li class="nav-item"><a class="nav-link" href="catalog.html">Номера и тарифы</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Передержки и цены</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Условия проживания</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#about">О нас</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#contacts">Контакты</a></li>
@@ -38,70 +38,70 @@
   <main class="container my-5">
     <section class="mb-4" aria-labelledby="conditions-title">
       <p class="text-success fw-bold mb-2">Комфорт складывается из мелочей</p>
-      <h1 class="display-5 fw-bold" id="conditions-title">Как живут наши гости</h1>
-      <p class="lead text-body-secondary mb-0">Понятный распорядок, своё место для отдыха и забота с учётом привычек. Выберите питомца, чтобы познакомиться с его номером.</p>
+      <h1 class="display-5 fw-bold" id="conditions-title">Условия передержки</h1>
+      <p class="lead text-body-secondary mb-0">Выберите питомца, чтобы посмотреть подходящее предложение. Размещение и уход обеспечивает исполнитель; «Лапки» помогают сравнить варианты.</p>
     </section>
-    <section class="my-4" aria-label="Описание выбранного номера">
-      <ul class="nav nav-pills flex-wrap gap-2 mb-4" id="roomTabs" role="tablist" aria-label="Для какого питомца нужен номер">
-        <li class="nav-item" role="presentation"><button class="nav-link active" id="room-cat-tab" data-bs-toggle="pill" data-bs-target="#cat" type="button" role="tab" aria-controls="cat" aria-selected="true">Для кошек</button></li>
-        <li class="nav-item" role="presentation"><button class="nav-link" id="room-dog-tab" data-bs-toggle="pill" data-bs-target="#dog" type="button" role="tab" aria-controls="dog" aria-selected="false">Для собак</button></li>
-        <li class="nav-item" role="presentation"><button class="nav-link" id="room-small-tab" data-bs-toggle="pill" data-bs-target="#small" type="button" role="tab" aria-controls="small" aria-selected="false">Для небольших питомцев</button></li>
+    <section class="my-4" aria-label="Описание выбранной передержки">
+      <ul class="nav nav-pills flex-wrap gap-2 mb-4" id="placeTabs" role="tablist" aria-label="Для какого питомца нужна передержка">
+        <li class="nav-item" role="presentation"><button class="nav-link active" id="place-cat-tab" data-bs-toggle="pill" data-bs-target="#cat" type="button" role="tab" aria-controls="cat" aria-selected="true">Для кошек</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="place-dog-tab" data-bs-toggle="pill" data-bs-target="#dog" type="button" role="tab" aria-controls="dog" aria-selected="false">Для собак</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="place-small-tab" data-bs-toggle="pill" data-bs-target="#small" type="button" role="tab" aria-controls="small" aria-selected="false">Для небольших питомцев</button></li>
       </ul>
       <div class="tab-content">
-        <section class="tab-pane fade show active" id="cat" role="tabpanel" aria-labelledby="room-cat-tab" tabindex="0">
+        <section class="tab-pane fade show active" id="cat" role="tabpanel" aria-labelledby="place-cat-tab" tabindex="0">
           <div class="row g-4 align-items-center">
             <div class="col-12 col-lg-6">
-              <img class="img-fluid rounded-4 shadow-sm" src="images/room-cat.svg" alt="Номер «Уют» для кошек" width="640" height="400">
+              <img class="img-fluid rounded-4 shadow-sm" src="images/room-cat.svg" alt="Передержка «Уют» для кошек" width="640" height="400">
             </div>
             <div class="col-12 col-lg-6">
               <span class="badge text-bg-success mb-3">Для кошек</span>
-              <h2 class="h2">Номер «Уют»</h2>
-              <p class="text-body-secondary">Кошкам важно самим выбирать, когда отдыхать, а когда общаться. В «Уюте» есть место для уединения и возможность расположиться повыше. Знакомый плед и любимая игрушка помогут освоиться.</p>
+              <h2 class="h2">Передержка «Уют»</h2>
+              <p class="text-body-secondary">Предложение передержки «Уют» ориентировано на кошек: личное пространство, место для уединения и полки для отдыха. Конкретные условия и привычный режим питомца стоит обсудить с исполнителем заранее.</p>
               <ul class="ps-3">
                 <li>Индивидуальное размещение</li>
                 <li>Кормление по привычному расписанию</li>
                 <li>Ежедневная уборка</li>
               </ul>
               <p class="fs-3 fw-bold">800 ₽ / сутки</p>
-              <a class="btn btn-outline-success" href="catalog.html#schedule-title">Посмотреть график занятости</a>
+              <a class="btn btn-outline-success" href="catalog.html#schedule-title">Посмотреть доступность</a>
             </div>
           </div>
         </section>
-        <section class="tab-pane fade" id="dog" role="tabpanel" aria-labelledby="room-dog-tab" tabindex="0">
+        <section class="tab-pane fade" id="dog" role="tabpanel" aria-labelledby="place-dog-tab" tabindex="0">
           <div class="row g-4 align-items-center">
             <div class="col-12 col-lg-6">
-              <img class="img-fluid rounded-4 shadow-sm" src="images/room-dog.svg" alt="Номер «Простор» для собак" width="640" height="400">
+              <img class="img-fluid rounded-4 shadow-sm" src="images/room-dog.svg" alt="Передержка «Простор» для собак" width="640" height="400">
             </div>
             <div class="col-12 col-lg-6">
               <span class="badge text-bg-success mb-3">Для собак</span>
-              <h2 class="h2">Номер «Простор»</h2>
-              <p class="text-body-secondary">После прогулок собаке нужно своё спокойное место. В «Просторе» достаточно места, чтобы удобно устроиться и отдохнуть. Темп прогулок и игры подбираем с учётом возраста и характера гостя.</p>
+              <h2 class="h2">Передержка «Простор»</h2>
+              <p class="text-body-secondary">Передержка «Простор» предлагает размещение собак с прогулками и местом для отдыха. У исполнителя уточните продолжительность прогулок, условия общения с другими животными и особенности повседневного ухода.</p>
               <ul class="ps-3">
                 <li>Две прогулки в день</li>
                 <li>Миски и лежанка</li>
                 <li>Фотоотчёт владельцу</li>
               </ul>
               <p class="fs-3 fw-bold">1 200 ₽ / сутки</p>
-              <a class="btn btn-outline-success" href="catalog.html#schedule-title">Посмотреть график занятости</a>
+              <a class="btn btn-outline-success" href="catalog.html#schedule-title">Посмотреть доступность</a>
             </div>
           </div>
         </section>
-        <section class="tab-pane fade" id="small" role="tabpanel" aria-labelledby="room-small-tab" tabindex="0">
+        <section class="tab-pane fade" id="small" role="tabpanel" aria-labelledby="place-small-tab" tabindex="0">
           <div class="row g-4 align-items-center">
             <div class="col-12 col-lg-6">
-              <img class="img-fluid rounded-4 shadow-sm" src="images/room-small.svg" alt="Номер «Мини» для небольших питомцев" width="640" height="400">
+              <img class="img-fluid rounded-4 shadow-sm" src="images/room-small.svg" alt="Передержка «Мини» для небольших питомцев" width="640" height="400">
             </div>
             <div class="col-12 col-lg-6">
               <span class="badge text-bg-success mb-3">Для небольших питомцев</span>
-              <h2 class="h2">Номер «Мини»</h2>
-              <p class="text-body-secondary">Небольшим питомцам особенно важны знакомые запахи и привычная обстановка. Поэтому в «Мини» они размещаются в своём вольере или клетке, отдельно от кошек и собак. Режим ухода заранее уточняем с владельцем.</p>
+              <h2 class="h2">Передержка «Мини»</h2>
+              <p class="text-body-secondary">Вариант «Мини» предназначен для кроликов и морских свинок. Исполнитель предлагает размещение в привычной клетке или вольере владельца; требования к корму, наполнителю и режиму ухода нужно согласовать с ним.</p>
               <ul class="ps-3">
                 <li>Отдельная тихая зона</li>
                 <li>Контроль воды и кормления</li>
                 <li>Уборка по согласованному режиму</li>
               </ul>
               <p class="fs-3 fw-bold">500 ₽ / сутки</p>
-              <a class="btn btn-outline-success" href="catalog.html#schedule-title">Посмотреть график занятости</a>
+              <a class="btn btn-outline-success" href="catalog.html#schedule-title">Посмотреть доступность</a>
             </div>
           </div>
         </section>
@@ -110,21 +110,21 @@
     <section class="my-5" aria-labelledby="routine-title">
       <div class="row g-4">
         <div class="col-12 col-lg-5">
-          <h2 class="h3" id="routine-title">День в привычном ритме</h2>
-          <p class="text-body-secondary">Не меняем жизнь питомца за один день. Время кормления, продолжительность активности и особенности ухода уточняем у владельца.</p>
-          <p class="text-body-secondary mb-0">Знакомство с новым местом проходит постепенно: сначала осваиваемся, затем возвращаемся к привычным занятиям.</p>
+          <h2 class="h3" id="routine-title">Как организуют день на передержке</h2>
+          <p class="text-body-secondary">У каждого исполнителя свой распорядок. Перед выбором передержки уточните время кормления, прогулок, игр и отдыха.</p>
+          <p class="text-body-secondary mb-0">Ниже — основные моменты, о которых стоит спросить. «Лапки» помогают сравнить информацию; конкретный режим согласуют с выбранным исполнителем.</p>
         </div>
         <div class="col-12 col-lg-7">
           <div class="list-group">
-            <div class="list-group-item p-3"><h3 class="h6">Утро</h3><p class="text-body-secondary mb-0">Свежая вода, завтрак по расписанию, уборка и первая прогулка для собак.</p></div>
-            <div class="list-group-item p-3"><h3 class="h6">День</h3><p class="text-body-secondary mb-0">Спокойный отдых, общение и игры с учётом настроения гостя.</p></div>
-            <div class="list-group-item p-3"><h3 class="h6">Вечер</h3><p class="text-body-secondary mb-0">Кормление, прогулка для собак и тихое время перед сном.</p></div>
+            <div class="list-group-item p-3"><h3 class="h6">Утро</h3><p class="text-body-secondary mb-0">Уточните время завтрака, смены воды, уборки и первой прогулки для собак.</p></div>
+            <div class="list-group-item p-3"><h3 class="h6">День</h3><p class="text-body-secondary mb-0">Обсудите, как чередуются отдых, игры и общение с питомцем.</p></div>
+            <div class="list-group-item p-3"><h3 class="h6">Вечер</h3><p class="text-body-secondary mb-0">Спросите о вечернем кормлении, прогулках и условиях спокойного сна.</p></div>
           </div>
         </div>
       </div>
     </section>
     <section class="my-5" aria-labelledby="packing-title">
-      <h2 class="h3 mb-4" id="packing-title">Что подготовить перед приездом</h2>
+      <h2 class="h3 mb-4" id="packing-title">Что подготовить для передачи исполнителю</h2>
       <div class="row g-4">
         <div class="col-12 col-md-4">
           <article class="p-4 bg-white border rounded-4 h-100"><h3 class="h5">Привычное питание</h3><p class="text-body-secondary mb-0">Корм на весь срок проживания и понятное расписание: порции, время и любимые лакомства.</p></article>
@@ -139,8 +139,8 @@
     </section>
     <section class="my-5" aria-labelledby="adapt-title">
       <div class="row g-4">
-        <div class="col-12 col-lg-5"><h2 class="h3" id="adapt-title">Первое знакомство без спешки</h2></div>
-        <div class="col-12 col-lg-7"><p class="text-body-secondary">В первые часы даём гостю осмотреться и выбрать удобное место. Не навязываем игры и общение, если ему хочется побыть одному.</p><p class="text-body-secondary mb-0">Во время проживания обращаем внимание на аппетит, настроение и поведение. Если привычки меняются, обсуждаем это с владельцем и корректируем повседневный уход.</p></div>
+        <div class="col-12 col-lg-5"><h2 class="h3" id="adapt-title">Что обсудить с исполнителем</h2></div>
+        <div class="col-12 col-lg-7"><p class="text-body-secondary">Расскажите, как питомец осваивается в новой обстановке, чего избегает и что помогает ему успокоиться. Обсудите возможные ограничения и особенности ухода.</p><p class="text-body-secondary mb-0">Уточните, как исполнитель связывается с владельцем, сообщает об изменениях поведения и действует, если требуется дополнительное внимание. Эти договорённости относятся к выбранной передержке, а не к офису сервиса.</p></div>
       </div>
     </section>
     <section class="my-5" aria-labelledby="faq-title">
@@ -148,19 +148,19 @@
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
           <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Что привезти вместе с питомцем?</button></h3>
-          <div class="accordion-collapse collapse show" id="faqOne" data-bs-parent="#faqAccordion"><div class="accordion-body">Привычный корм, сведения о режиме и особенностях поведения. Любимый плед или игрушка помогут сохранить знакомую обстановку. Для небольших питомцев понадобится их клетка или вольер.</div></div>
+          <div class="accordion-collapse collapse show" id="faqOne" data-bs-parent="#faqAccordion"><div class="accordion-body">Обычно нужны привычный корм, информация о режиме и знакомые вещи. Точный список уточните у выбранного исполнителя: требования разных передержек могут отличаться.</div></div>
         </div>
         <div class="accordion-item">
           <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Какие дополнительные услуги доступны?</button></h3>
-          <div class="accordion-collapse collapse" id="faqTwo" data-bs-parent="#faqAccordion"><div class="accordion-body">Груминг, дополнительная прогулка для собаки и индивидуальный уход. Состав ухода подбираем с учётом привычек и потребностей гостя.</div></div>
+          <div class="accordion-collapse collapse" id="faqTwo" data-bs-parent="#faqAccordion"><div class="accordion-body">В каталоге указаны груминг, дополнительные прогулки и индивидуальный уход. Их наличие, стоимость и состав уточняйте у конкретного исполнителя.</div></div>
         </div>
         <div class="accordion-item">
           <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">Животные разных видов находятся вместе?</button></h3>
-          <div class="accordion-collapse collapse" id="faqThree" data-bs-parent="#faqAccordion"><div class="accordion-body">Нет. Для кошек, собак и небольших питомцев предусмотрены отдельные зоны. У каждого гостя своё место для отдыха.</div></div>
+          <div class="accordion-collapse collapse" id="faqThree" data-bs-parent="#faqAccordion"><div class="accordion-body">Это зависит от передержки. Уточните у исполнителя, как организованы отдельные зоны и взаимодействие животных; не все варианты размещения одинаковы.</div></div>
         </div>
         <div class="accordion-item">
           <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">Как проходит кормление?</button></h3>
-          <div class="accordion-collapse collapse" id="faqFour" data-bs-parent="#faqAccordion"><div class="accordion-body">Используем привычный корм, который привозит владелец. Заранее уточняем размер порций, расписание и особенности питания, чтобы сохранить знакомый режим.</div></div>
+          <div class="accordion-collapse collapse" id="faqFour" data-bs-parent="#faqAccordion"><div class="accordion-body">Заранее передайте исполнителю сведения о корме, порциях и расписании. Узнайте, может ли он соблюдать нужный режим и что требуется привезти с питомцем.</div></div>
         </div>
       </div>
     </section>
@@ -170,22 +170,21 @@
       <div class="row g-4">
         <div class="col-12 col-md-5">
           <p class="h4 mb-2">🐾 Лапки</p>
-          <p class="text-white-50 mb-0">Уютное место для вашего питомца.<br>Привычный ритм и внимание каждый день.</p>
+          <p class="text-white-50 mb-0">Онлайн-сервис для поиска передержек.<br>Помогаем сравнить варианты заботы о питомце.</p>
         </div>
         <div class="col-6 col-md-3">
-          <p class="fw-bold mb-2">Знакомство с гостиницей</p>
+          <p class="fw-bold mb-2">О сервисе</p>
           <ul class="list-unstyled mb-0">
             <li class="mb-1"><a class="link-light" href="index.html#about">О нас</a></li>
-            <li class="mb-1"><a class="link-light" href="catalog.html">Номера и тарифы</a></li>
+            <li class="mb-1"><a class="link-light" href="catalog.html">Передержки и цены</a></li>
             <li class="mb-1"><a class="link-light" href="product.html">Условия проживания</a></li>
             <li><a class="link-light" href="index.html#contacts">Контакты</a></li>
           </ul>
         </div>
         <div class="col-6 col-md-4">
-          <p class="fw-bold mb-2">Контакты</p>
+          <p class="fw-bold mb-2">Поддержка сервиса</p>
           <address class="small text-white-50 mb-0">
-            <p class="mb-1">г. Лапкино, ул. Тихая, д. 12</p>
-            <p class="mb-1">+7 (000) 555-12-34</p>
+            <p class="mb-1">+7 (906) 555-12-34</p>
             <p class="mb-1"><a class="link-light text-break" href="mailto:hello@lapki.example">hello@lapki.example</a></p>
             <p class="mb-0">Ежедневно, 09:00–20:00</p>
           </address>
