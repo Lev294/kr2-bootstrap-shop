@@ -1,5 +1,12 @@
 // Bootstrap сам управляет мобильным меню и раскрывающимся FAQ.
 
+// Соцсети пока служат кликабельными заглушками без перехода.
+document.querySelectorAll("a[data-placeholder]").forEach(function (link) {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+  });
+});
+
 // После выбора ссылки закрываем мобильное меню.
 const navbar = document.getElementById("mainNavbar");
 if (navbar && window.bootstrap) {
