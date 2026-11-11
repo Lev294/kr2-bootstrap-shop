@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="phone" viewBox="0 0 24 24">
+    <path d="m7 3 3 5-2 2a16 16 0 0 0 6 6l2-2 5 3-1 4C11 22 2 13 3 4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="clock" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M12 7v5l3 2"/>
+    </g>
+  </symbol>
+  <symbol id="mail" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="m3 6 9 7 9-7"/>
+    </g>
+  </symbol>
+  <symbol id="telegram" viewBox="0 0 24 24">
+    <path d="M21 3 3 10l7 3 3 8 8-18ZM10 13 21 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="vk" viewBox="0 0 24 24">
+    <path d="m2 6 4 12 4-12m4 0v12m7-12-7 6 7 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
