@@ -5,19 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="О сервисе Лапки: как устроен агрегатор передержек и как связаться с поддержкой по телефону и почте.">
   <title>О нас и контакты — Лапки</title>
+  <script src="js/theme.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
   <header class="brand-bar py-3" id="top">
     <div class="container">
-      <div class="row align-items-center g-2">
-        <div class="col-12 col-md-8"><p class="h5 mb-0">Сервис поиска передержек</p></div>
-        <div class="col-12 col-md-4 text-md-end"><span class="badge text-bg-light">Забота, пока вы в отъезде</span></div>
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-xl-4"><p class="h5 mb-0">Сервис поиска передержек</p></div>
+        <div class="col-12 col-xl-8 d-flex flex-wrap justify-content-xl-end align-items-center gap-3">
+          <form class="site-search d-flex gap-2" role="search" aria-label="Поиск по сайту" action="search.html" method="get">
+            <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+            <input class="form-control form-control-sm" type="search" id="site-search" name="q" placeholder="Поиск по сайту" maxlength="120" required>
+            <button class="btn btn-success btn-sm" type="submit">Найти</button>
+          </form>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Тёмная тема">
+            <span class="theme-toggle-track" aria-hidden="true"><span class="theme-toggle-thumb"></span></span>
+            <span>Тёмная тема</span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
-  <nav class="navbar navbar-expand-lg bg-dark sticky-top shadow-sm" data-bs-theme="dark" aria-label="Основная навигация">
+  <nav class="navbar navbar-expand-xl bg-dark sticky-top shadow-sm" data-bs-theme="dark" aria-label="Основная навигация">
     <div class="container">
       <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="Лапки — на главную" width="150" height="40"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
@@ -29,6 +40,7 @@
           <li class="nav-item"><a class="nav-link" href="catalog.html">Передержки и цены</a></li>
           <li class="nav-item"><a class="nav-link" href="product.html">Условия проживания</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">О нас и контакты</a></li>
+          <li class="nav-item"><a class="nav-link" href="favorites.html">Избранное <span class="badge text-bg-success" data-favorites-count>0</span></a></li>
         </ul>
       </div>
     </div>
@@ -168,6 +180,7 @@
               <li class="mb-2"><a class="link-light" href="catalog.html">Передержки и цены</a></li>
               <li class="mb-2"><a class="link-light" href="product.html">Условия проживания</a></li>
               <li class="mb-2"><a class="link-light" aria-current="page" href="about.html">О нас и контакты</a></li>
+              <li class="mb-2"><a class="link-light" href="favorites.html">Избранное</a></li>
             </ul>
           </nav>
         </div>
@@ -190,7 +203,27 @@
       </div>
     </div>
   </footer>
+  <aside class="help-panel" id="helpPanel" aria-labelledby="help-title" hidden>
+    <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+      <h2 class="h6 mb-0" id="help-title">Помощник «Лапки»</h2>
+      <button class="btn-close" id="helpClose" type="button" aria-label="Закрыть подсказку"></button>
+    </div>
+    <p>Здравствуйте! Нужна помощь с выбором передержки?</p>
+    <p class="small text-body-secondary">Подскажу, где посмотреть условия и рассчитать стоимость.</p>
+    <div class="d-grid gap-2">
+      <a class="btn btn-outline-success btn-sm" href="catalog.html">Посмотреть передержки</a>
+      <a class="btn btn-outline-success btn-sm" href="catalog.html#calculator">Рассчитать и сравнить</a>
+      <a class="btn btn-outline-success btn-sm" href="about.html#contacts-title">Связаться с поддержкой</a>
+    </div>
+  </aside>
+  <button class="help-launcher btn btn-success" id="helpToggle" type="button" aria-expanded="false" aria-controls="helpPanel">Нужна помощь?</button>
+  <p class="visually-hidden" id="siteStatus" role="status"></p>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/widget.js"></script>
 </body>
 </html>

@@ -1,4 +1,26 @@
-/* Bootstrap отвечает за сетки и компоненты. Здесь только небольшие правки. */
+/* Bootstrap отвечает за сетки и компоненты; здесь цвета и собственные элементы. */
+:root {
+  --lapki-page: #fffcf7;
+  --lapki-surface: #fff;
+  --lapki-hero: #fbefd9;
+  --lapki-brand: #f4cd88;
+  --lapki-image: #f8ead6;
+  --lapki-muted: #f1f5f0;
+  --lapki-accent: #198754;
+}
+html[data-bs-theme="dark"] {
+  --lapki-page: #151c1a;
+  --lapki-surface: #202b26;
+  --lapki-hero: #1d3027;
+  --lapki-brand: #2b382d;
+  --lapki-image: #34483d;
+  --lapki-muted: #29372f;
+  --lapki-accent: #74d7a4;
+  --bs-body-bg: #151c1a;
+  --bs-body-color: #e4eee8;
+  --bs-secondary-color: #b1c0b7;
+  --bs-border-color: #405047;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -7,25 +29,25 @@ html {
 }
 body {
   min-height: 100vh;
-  background-color: #fffcf7;
+  background-color: var(--lapki-page);
 }
 .brand-bar {
-  background-color: #f4cd88;
+  background-color: var(--lapki-brand);
 }
 .hero {
-  background-color: #fbefd9;
+  background-color: var(--lapki-hero);
 }
 .nav-pills {
   --bs-nav-pills-link-active-bg: #198754;
-  --bs-nav-link-color: #198754;
-  --bs-nav-link-hover-color: #146c43;
+  --bs-nav-link-color: var(--lapki-accent);
+  --bs-nav-link-hover-color: var(--lapki-accent);
 }
 .room-image {
   display: block;
   width: 100%;
   height: 200px;
   object-fit: contain;
-  background-color: #f8ead6;
+  background-color: var(--lapki-image);
 }
 
 .brand-logo img {
@@ -66,5 +88,144 @@ body {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+/* Нейтральные блоки получают фон выбранной темы. */
+.bg-white {
+  background-color: var(--lapki-surface) !important;
+}
+.text-success,
+.link-success {
+  color: var(--lapki-accent) !important;
+}
+.btn-outline-success {
+  --bs-btn-color: var(--lapki-accent);
+  --bs-btn-border-color: var(--lapki-accent);
+}
+.table-light {
+  --bs-table-bg: var(--lapki-muted);
+  --bs-table-color: var(--bs-body-color);
+  --bs-table-border-color: var(--bs-border-color);
+}
+html[data-bs-theme="dark"] .btn-outline-dark {
+  --bs-btn-color: #e4eee8;
+  --bs-btn-border-color: #9caf9f;
+  --bs-btn-hover-bg: #e4eee8;
+  --bs-btn-hover-color: #151c1a;
+}
+html[data-bs-theme="dark"] .btn-outline-secondary {
+  --bs-btn-color: #bdcec3;
+  --bs-btn-border-color: #82958a;
+  --bs-btn-hover-bg: #bdcec3;
+  --bs-btn-hover-color: #151c1a;
+}
+.site-search {
+  flex: 1 1 16rem;
+  max-width: 28rem;
+}
+.site-search input {
+  min-width: 0;
+}
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem .75rem;
+  color: var(--bs-body-color);
+  background: var(--lapki-surface);
+  border: 1px solid var(--bs-border-color);
+  border-radius: .5rem;
+  font-size: .875rem;
+  white-space: nowrap;
+}
+.theme-toggle-track {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  background: #becdbf;
+  border-radius: 20px;
+}
+.theme-toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform .3s ease;
+}
+html[data-bs-theme="dark"] .theme-toggle-track {
+  background: #198754;
+}
+html[data-bs-theme="dark"] .theme-toggle-thumb {
+  transform: translateX(18px);
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--lapki-accent);
+  outline-offset: 3px;
+}
+.theme-animating,
+.theme-animating body,
+.theme-animating .card,
+.theme-animating .bg-white,
+.theme-animating .hero,
+.theme-animating .brand-bar,
+.theme-animating .form-control,
+.theme-animating .form-select,
+.theme-animating .help-panel {
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+}
+.favorite-button[aria-pressed="true"] {
+  --heart-fill: currentColor;
+}
+.comparison-table {
+  min-width: 530px;
+}
+.comparison-table th,
+.comparison-table td {
+  min-width: 140px;
+}
+.help-launcher {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1030;
+  box-shadow: 0 4px 18px #0003;
+}
+.help-panel {
+  position: fixed;
+  left: 1rem;
+  bottom: 4.75rem;
+  width: 320px;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100dvh - 6rem);
+  overflow-y: auto;
+  z-index: 1030;
+  padding: 1.25rem;
+  background: var(--lapki-surface);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px #0003;
+}
+.help-panel:not([hidden]) {
+  animation: help-appear .25s ease-out;
+}
+.help-panel[hidden] {
+  display: none;
+}
+@keyframes help-appear {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle-thumb,
+  .theme-animating,
+  .theme-animating * {
+    transition: none !important;
+  }
+  .help-panel {
+    animation: none !important;
   }
 }
